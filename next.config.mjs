@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: "export",
+
+    images: {
+        unoptimized: true,
+    },
     // Webpack config for wowjs UMD module support
     webpack: (config, { isServer }) => {
         // Fix for wowjs UMD module
